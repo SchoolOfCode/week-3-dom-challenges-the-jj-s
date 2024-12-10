@@ -15,3 +15,20 @@ Hint: You can achieve this in multiple ways e.g. via the opacity or style proper
 */
 
 // Place your plan and solution below!
+
+
+// get the element for image
+const chrisImage = document.getElementById("chrisImage");
+
+// function to change opacity
+const changeOpacity = (e, value) => {
+  e.target.style.opacity = value;
+};
+
+// add event listener for hover - change opacity to 0 to hide image
+chrisImage.addEventListener("mouseover", (e) => changeOpacity(e, "0"));
+
+// add event listener for no hover - change opacity to 1 to show image
+chrisImage.addEventListener("mouseout", (e) => changeOpacity(e, "1"));
+
+
