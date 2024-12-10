@@ -34,23 +34,18 @@ Expected Outcomes:
 //ID for stars is the div container called 'stars'
 //star-icon is the symbol
 const starSlider = document.getElementById("starSlider");
-
 const starsContainer = document.getElementById("stars");
+const starElement = `<span class="star-icon">★</span>`
 
 function updateStars() {
   const starCount = starSlider.value;
 
+// Resets the stars 
   starsContainer.innerHTML = "";
 
+  // adds stars to dom
   for (let i = 0; i < starCount; i++) {
-    const star = document.createElement("span");
-
-    star.textContent = "★";
-
-    star.classList.add("star-icon");
-
-    starsContainer.appendChild(star);
-    console.log(star);
+    starsContainer.innerHTML += starElement
   }
 }
 
