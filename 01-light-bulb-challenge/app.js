@@ -14,3 +14,30 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+//lightBulbon
+
+const onButton = document.getElementById("turnBulbOn");
+const offButton = document.getElementById("turnBulbOff")
+const img = document.getElementById("lightbulb");
+//function call back for eventlis
+function bulbOn(){ 
+  lightbulb.src = "light-bulb-on.png"
+};
+
+//add event listener to listen to the click  
+onButton.addEventListener("click", bulbOn ); 
+//when the button is clicked 
+//change the img "light-bulb-on.png" 
+function bulbOff(){
+  lightbulb.src = "light-bulb-off.png"
+
+};
+offButton.addEventListener("click", bulbOff )
+
+//lightBuloff
+//get the turneff button.
+//get the img
+//add event listener to listen to the click 
+//when the button is clicked 
+//change the img "light-bulb-off.png"
