@@ -13,3 +13,19 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+
+// initialise colour picker & canvas 
+const colorPicker = document.getElementById("colorPicker");
+const canvas = document.getElementById("canvas");
+
+// get the colour from the colour picker somehow
+
+// function
+let colorPicked = colorPicker.value = "#fffdfc"
+
+
+colorPicker.addEventListener("input", function (){
+   colorPicked = colorPicker.value;
+   canvas.style.backgroundColor = colorPicked;
+})
